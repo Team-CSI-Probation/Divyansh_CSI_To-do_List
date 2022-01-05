@@ -1,55 +1,78 @@
-
 *
 {
+    background-color: rgb(245, 231, 217);
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-
-:root{
-    --navbar-height:59px;
-}
-
-#navbar{
+body{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
     color: black;
-    position: absolute;
-    top:0;
-    /* position: relative; */
-    position: sticky;
 }
-
-
-
-#navbar ul{
-    display: flex;
-}
-#navbar::before{
-    content:"";
-    background-color: blanchedalmond;
-    position: absolute;
-    top: 0px;
-    left: 0px;    
-    height: 100%;
+header{
+    text-align: center;
+    padding: 2rem 1rem ;
     width: 100%;
-    z-index: -1;
-
 }
-#navbar ul li{
-    list-style: none;
-    font-size: 1.4rem;
+header h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
 }
 
-#navbar ul li a{
-    display: block;
-    padding: 3px 15px;
-    border-radius: 10px;
-    text-decoration: none; 
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+#new_task
+{
+    flex: 1 1 0%;
+    padding: 1rem;
+    background-color: rgb(247, 243, 239);
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+}
+#task_button{
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#task_button:hover{
     color: black;
+    background-color: white;
+    border-radius: 1rem;
+    opacity: 0.8;
+}
+#task_button:active{
+    opacity: 0.5;
+}
+#clear_all{
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#clear_all:hover{
+    color: black;
+    background-color: white;
+    border-radius: 1rem;
+    opacity: 0.8;
+}
+#clear_all:active{
+    opacity: 0.5;
 }
 
-#navbar ul li a:hover{
-    color: white;
-    background-color: black;
+
+main{
+    flex: 1 1 0%;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
 }
